@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    margin: 10px 0px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 50px 30px 0px 0px;
+    float: right;
+}
+nav li > a {
+    text-decoration: none;
+    color: #969696;
+    font-weight: bold;
+}
+nav li > a:hover {
+    transition: 1s;
+    color: #5e5e5e;
+}
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    height: 125px;
+}
+#background_imagePrincipal {
+    background-color: #006991;
+}
+#img_principal {
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+#background_services {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+}
+.text_services {
+    text-align: justify;
+    line-height: 25px;
+}
+.link_services {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.container_services {
+    max-width: 350px; 
+    padding: 20px 30px;
+    margin-top: -100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0px 0px 40px 30px;
+    transition: background-color 0.5s ease; /* Transição suave */
+}
+
+.container_services:hover {
+    background-color: #006991; /* Cor de fundo ao passar o mouse */
+    color: #fff;
+}
+.container_services:hover #painel {
+    content: url(../imgs/caixa-de-fusiveis-white.png);
+}
+
+.container_services:hover #robotica {
+    content: url(../imgs/braco-robotico-white.png);
+}
+
+.container_services2:hover #clp {
+    content: url(../imgs/codigo-white.png);
+}
+.container_services2:hover #supervisorio {
+    content: url(../imgs/televisao-de-ecra-plano-white.png);
+}
+
+.container_services2 {
+    max-width: 350px; 
+    padding: 20px 30px;
+    margin-top: -100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0px 0px 40px 30px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.container_services2:hover {
+    background-color: #006991; /* Cor de fundo ao passar o mouse */
+    color: #fff;
+}
+
+
+.icon_services{
+    height: 45px;
+}
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -70px;
+}
+
+.row2 {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row_footer{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#coluna1{
+    position: relative;
+    
+}
+.logo {
+    padding: 10px;
+    height: 100px;
+}
+.margin_center_services{
+    margin: auto;
+    max-width: 900px;
+}
+.margin_center {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+#background_sobrenos {
+    background-color: #006991;
+    box-shadow: 0 -6px 16px rgba(0, 0, 0, 0.3);
+    
+}
+@media (max-width: 1200px) {
+    .container_sobrenos {
+        margin:auto;
+    }
+}
+.margin_center_sobrenos{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+.container_sobrenos {
+    width: 450px;
+    padding: 70px 0px;
+    color: #fff;
+}
+
+.container_sobrenos h2 {
+  margin-bottom: 40px;
+}
+.container_sobrenos p {
+    text-align: justify;
+    line-height: 25px;
+  }
+
+footer{
+    background-color: #fff;
+    height: 50px;
+    margin-top: 40px;
+    color: #969696;
+}
+footer img{
+    height: 100px;
+}
+.margin_center_footer {
+    margin: auto;
+    max-width: 900px;
+    float: both;
+}
+.margin_center_footer2 {
+    margin: auto;
+    max-width: 750px;
+    text-align: center;
+    float: both;
+    padding: 20px;
+}
+h3 {
+    color: #5e5e5e;
+    margin-bottom: 10px;
+}
+#resumo {
+    margin-right: 100px ;
+    width: 200px;
+}
+#fale_conosco {
+    width: 250px;
+    
+}
+#fale_conosco ul {
+    list-style-type: none;
+    padding: 0px;
+}
+#fale_conosco li {
+    padding: 3px;
+    
+}
+#fale_conosco a,
+#endereco a {
+    text-decoration: none;
+    color: #969696;
+}
+#fale_conosco li :hover,
+#endereco :hover{
+    color: #5e5e5e;
+}
+#endereco {
+    margin-left: 50px;
+    width: 250px;
+}
+/* Media query para telas menores que 500px */
+@media (max-width: 500px) {
+    .container_services,
+    .container_services2,
+    #resumo,
+    #fale_conosco,
+    #endereco {
+        margin: 20px auto;
+    }
+}
