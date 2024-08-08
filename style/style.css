@@ -229,3 +229,129 @@ h3 {
         margin: 20px auto;
     }
 }
+
+@keyframes complexAnimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.complex-animation {
+    animation: complexAnimation 1.5s ease-in-out;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: opacity 0.8s ease-out, transform 2s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #969696;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    color: #5e5e5e;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+@keyframes loginanimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.login-animation{
+    animation: loginanimation 0.5s ease-in-out;
+}
+
+
+@media (max-width: 1200px) {
+    #login {
+        margin: auto;/* A posição à direita é ajustada para 10px em telas menores */
+        right: 0;
+    }
+}
+
+#login {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    right: 350px; /* Posição à direita em telas maiores */
+    top: 125px;
+    position: absolute;
+    display: none; /* Inicialmente escondida */
+    transition: right 0.5s ease, opacity 0.5s ease;
+}
+#margin_login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group img {
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #006991;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover {
+    background-color: #0279a8;
+}
+
+#login a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #006991;
+    text-decoration: none;
+}
+
+#login a:hover {
+    text-decoration: underline;
+}

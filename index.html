@@ -17,13 +17,29 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">Fazer login</a>
+                    <button onclick="toggleDiv()">Fazer login</button>
                 </li>
                 <li>
                     <a href="javascript:void(0);" onclick="rolarParaSecao()">Entrar em contato</a>
                 </li>
             </ul>
         </nav>
+        <div id="login" class="login-animation">
+            <div id="margin_login">
+                <form action="">
+                    <div class="form-group">
+                        <img src="imgs/sombra-de-usuario-masculino.png" alt="Ícone de usuário">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <img src="imgs/fechadura (1).png" alt="Ícone de fechadura">
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a href="#">Problemas com login?</a>
+                </form>
+            </div>
+        </div>
         <img class="logo" src="imgs/logovrd.png" alt="">
     </div>
     </header>
@@ -33,6 +49,7 @@
         </div>
         <div id="background_services">
             <div class="margin_center_services">
+                <div class="complex-animation">
                 <div class="row">
                     <div id="coluna1" class="container_services">
                         <a class="link_services" href="">
@@ -65,18 +82,21 @@
                         </a>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
         <div id="background_sobrenos">
             <div class="margin_center_sobrenos">
                 <div class="row2">
                 <div class="container_sobrenos">
-                    <h2>SOBRE NÓS</h2>
-                    <p>Bem-vindo ao nosso site. Estamos dedicados a fornecer soluções inovadoras e eficientes para a automação Industrial.
+                    <div class="animate-on-scroll">
+                        <h2>SOBRE NÓS</h2>
+                        <p>Bem-vindo ao nosso site. Estamos dedicados a fornecer soluções inovadoras e eficientes para a automação Industrial.
 
-                        A indústria 4.0 e tem um impacto significativo na produtividade, eficiência e segurança dos processos industriais. Nosso objetivo é ajudar nossos clientes a aproveitar ao máximo destes benefícios, fornecer soluções personalizadas para atender às suas necessidades específicas. Desde o projeto e implementação de sistemas de automação até a manutenção e suporte contínuo, estamos comprometidos em garantir que nossos clientes obtenham os melhores resultados possíveis.
-                        
-                        Navegue pelo nosso site para conhecer mais sobre nossos serviços e soluções de automação industrial. Estamos ansiosos para trabalhar com você e ajudá-lo a alcançar seus objetivos na automação industrial.</p>
+                            A indústria 4.0 e tem um impacto significativo na produtividade, eficiência e segurança dos processos industriais. Nosso objetivo é ajudar nossos clientes a aproveitar ao máximo destes benefícios, fornecer soluções personalizadas para atender às suas necessidades específicas. Desde o projeto e implementação de sistemas de automação até a manutenção e suporte contínuo, estamos comprometidos em garantir que nossos clientes obtenham os melhores resultados possíveis.
+                            
+                            Navegue pelo nosso site para conhecer mais sobre nossos serviços e soluções de automação industrial. Estamos ansiosos para trabalhar com você e ajudá-lo a alcançar seus objetivos na automação industrial.</p>
+                    </div>    
                 </div>
                 <div class="container_sobrenos">
                     <img src="imgs/wall-e.png" alt="">
